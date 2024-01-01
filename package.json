@@ -1,0 +1,29 @@
+{
+    "private": true,
+    "name": "serve-cdn-assets",
+    "version": "1.0.0",
+    "description": "A cloudflare workers to proxy and cache assets from a CDN",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier --write '**/*.{js,css,json,md}'",
+        "dev": "wrangler dev index.js",
+        "publish:dev": "wrangler publish index.js",
+        "publish:prod": "wrangler publish index.js --env production"
+    },
+    "author": "Wes Bos <wesbos@gmail.com>",
+    "maintainers": [
+        {
+            "email": "lehuygiang28@gmail.com",
+            "name": "lehuygiang28",
+            "url": "https://github.com/lehuygiang28"
+        }
+    ],
+    "license": "MIT",
+    "devDependencies": {
+        "prettier": "^1.19.1"
+    },
+    "dependencies": {
+        "@cloudflare/wrangler": "^1.14.0"
+    }
+}
